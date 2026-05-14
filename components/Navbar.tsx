@@ -26,8 +26,14 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
+          {/* Logo with elegant Crown in Gold */}
           <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center">
-            <span className="text-white font-serif-custom text-2xl font-semibold">b</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 17L3 21H21L19 17M5 17L12 3L19 17M5 17H19" stroke="#C9B27A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <circle cx="7" cy="17" r="1.5" fill="#C9B27A"/>
+              <circle cx="12" cy="17" r="1.5" fill="#C9B27A"/>
+              <circle cx="17" cy="17" r="1.5" fill="#C9B27A"/>
+            </svg>
           </div>
           <div>
             <div className="font-serif-custom text-2xl tracking-tighter text-primary">büroassist</div>
