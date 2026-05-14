@@ -8,14 +8,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-y-16">
         <div className="md:col-span-5">
           <div className="flex items-center gap-3 mb-6">
-            {/* Logo with Crown in Gold */}
             <div className="w-9 h-9 bg-white/90 rounded-xl flex items-center justify-center">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 17L3 21H21L19 17M5 17L12 3L19 17M5 17H19" stroke="#C9B27A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="7" cy="17" r="1.5" fill="#C9B27A"/>
-                <circle cx="12" cy="17" r="1.5" fill="#C9B27A"/>
-                <circle cx="17" cy="17" r="1.5" fill="#C9B27A"/>
-              </svg>
+              <span className="text-primary font-serif-custom text-2xl font-semibold">b</span>
             </div>
             <div className="font-serif-custom text-3xl tracking-tighter text-white">büroassist</div>
           </div>
