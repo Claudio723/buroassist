@@ -12,13 +12,13 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-[100dvh] flex items-center pt-20 relative overflow-hidden bg-gradient-to-br from-warm-bg via-white to-warm-bg">
+    <section className="min-h-[100dvh] flex items-center pt-20 relative overflow-hidden bg-gradient-to-br from-warm-bg via-white to-warm-bg");
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
         {/* Left Content */}
         <div className="md:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
             <div className="w-2 h-2 bg-accent rounded-full animate-pulse" /> 
-            Neu: Persönliche Betreuung für KMU
+            Persönliche Betreuung für kleine Unternehmen
           </div>
 
           <h1 className="text-6xl md:text-7xl lg:text-[84px] leading-[1.05] tracking-tighter font-semibold text-balance">
@@ -27,8 +27,8 @@ export default function Hero() {
           </h1>
 
           <p className="max-w-[520px] text-xl text-text-muted leading-relaxed">
-            Professionelle Büroassistenz für kleine und mittlere Unternehmen in der Schweiz. 
-            Buchhaltung, Korrespondenz, Organisation – alles aus einer Hand.
+            Praktische Bürohilfe für kleine Unternehmen in der Schweiz. 
+            Buchhaltung, Korrespondenz, Organisation und vieles mehr – alles aus einer Hand.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -58,7 +58,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="text-text-muted">
-              Vertraut von <span className="font-semibold text-text-dark">vielen KMU</span> in der Schweiz
+              Vertraut von <span className="font-semibold text-text-dark">vielen kleinen Unternehmen</span>
             </div>
           </div>
         </div>
