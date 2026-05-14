@@ -23,53 +23,50 @@ type FormData = z.infer<typeof formSchema>;
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>({
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = (data: FormData) => {
     setIsSubmitting(true);
-    setError(null);
 
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+    // Create mailto link with prefilled content
+    const subject = encodeURIComponent(`Anfrage von ${data.vorname} ${data.nachname} (${data.firma})`);
+    const body = encodeURIComponent(
+      `Hallo Patrizia,
+
+Mein Name ist ${data.vorname} ${data.nachname}.
+Firma: ${data.firma}
+E-Mail: ${data.email}
+${data.telefon ? `Telefon: ${data.telefon}
+` : ''}${data.termin ? `Wunschtermin: ${data.termin}
+` : ''}
+
+Nachricht:
+${data.nachricht}
+
+Vielen Dank!
+${data.vorname} ${data.nachname}`
+    );
+
+    // Open default mail client
+    window.location.href = `mailto:info@buroassist.ch?subject=${subject}&body=${body}`;
+
+    // Show success animation
+    setTimeout(() => {
+      setIsSuccess(true);
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
       });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setIsSuccess(true);
-        confetti({
-          particleCount: 180,
-          spread: 80,
-          origin: { y: 0.6 }
-        });
-        setTimeout(() => {
-          confetti({
-            particleCount: 100,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0.1 }
-          });
-        }, 280);
-
-        reset();
-        setTimeout(() => {
-          setIsSuccess(false);
-        }, 4200);
-      } else {
-        setError(result.message || 'Etwas ist schiefgelaufen.');
-      }
-    } catch (err) {
-      setError('Verbindungsfehler. Bitte versuchen Sie es später erneut.');
-    } finally {
-      setIsSubmitting(false);
-    }
+      reset();
+      setTimeout(() => {
+        setIsSuccess(false);
+        setIsSubmitting(false);
+      }, 3800);
+    }, 600);
   };
 
   return (
@@ -159,17 +156,10 @@ export default function Contact() {
                   {...register('nachricht')}
                   rows={6}
                   className="form-input w-full px-6 py-4 rounded-3xl border border-primary/20 bg-white text-lg placeholder:text-text-muted/60 resize-y min-h-[140px]"
-                  placeholder="Hallo Maria, ich würde gerne mehr über Ihre Buchhaltungspakete erfahren und einen passenden Termin finden..."
+                  placeholder="Hallo Patrizia, ich würde gerne mehr über Ihre Bürohilfe erfahren und einen passenden Termin finden..."
                 />
                 {errors.nachricht && <p className="text-red-500 text-sm mt-1.5">{errors.nachricht.message}</p>}
               </div>
-
-              {error && (
-                <div className="text-red-600 bg-red-50 p-4 rounded-2xl text-sm flex items-start gap-3">
-                  <div>⚠️</div> 
-                  <div>{error}</div>
-                </div>
-              )}
 
               <motion.button 
                 type="submit"
@@ -187,7 +177,7 @@ export default function Contact() {
                 )}
               </motion.button>
 
-              <p className="text-center text-xs text-text-muted pt-3">Ihre Daten werden vertraulich behandelt. DSGVO-konform.</p>
+              <p className="text-center text-xs text-text-muted pt-3">Klicken Sie auf „Senden“ – Ihr Standard-Mail-Programm öffnet sich automatisch mit den ausgefüllten Daten.</p>
             </motion.form>
           ) : (
             <motion.div 
@@ -201,9 +191,9 @@ export default function Contact() {
               </div>
               <h3 className="text-4xl font-semibold tracking-tight mb-4">Vielen Dank!</h3>
               <p className="text-xl text-text-muted max-w-sm mx-auto">
-                Ihre Anfrage ist bei uns eingegangen. Wir melden uns persönlich innerhalb von 24 Stunden.
+                Ihr Mail-Programm sollte sich jetzt geöffnet haben. Wir melden uns schnellstmöglich bei Ihnen.
               </p>
-              <div className="mt-8 text-sm text-emerald-600 font-medium">Maria Weber • büroassist</div>
+              <div className="mt-8 text-sm text-emerald-600 font-medium">Patrizia Steyskal • büroassist</div>
             </motion.div>
           )}
         </AnimatePresence>
