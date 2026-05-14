@@ -14,7 +14,7 @@ export default function About() {
           <div className="space-y-7 text-xl text-text-muted leading-relaxed">
             <p>
               Hallo, ich bin <span className="font-semibold text-text-dark">Patrizia Steyskal</span>. 
-              Als Mutter von zwei Kindern und langjährige Büroleiterin weiss ich genau, wie kostbar jede Stunde ist – besonders wenn man ein eigenes Unternehmen führt.
+              Als langjährige Büroleiterin und Mutter weiss ich genau, wie kostbar jede Stunde ist – besonders wenn man ein eigenes Unternehmen führt.
             </p>
             <p>
               Ich habe büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team viele kleine Unternehmen in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
