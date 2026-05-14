@@ -15,7 +15,7 @@ const config: Config = {
       colors: {
         'primary': '#B76E79',      // soft dusty rose
         'accent': '#C9B27A',       // subtle warm gold
-        'warm-bg': '#FDF8F5',      // very light creamy blush
+        'warm-bg': '#FFF9F8',      // extremely light delicate pink (almost white)
         'text-dark': '#3F2E2E',
         'text-muted': '#7A6B6B',
       }
