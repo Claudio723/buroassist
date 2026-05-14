@@ -23,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass">
+    <nav className="fixed top-0 left-0 right-0 z-50 glass");
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-3">
           {/* Logo with elegant Crown in Gold */}
@@ -43,7 +43,6 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-10 text-sm font-medium">
           <button onClick={() => scrollToSection('leistungen')} className="hover:text-primary transition-colors">Leistungen</button>
-          <button onClick={() => scrollToSection('warum')} className="hover:text-primary transition-colors">Warum wir</button>
           <button onClick={() => scrollToSection('ueber-uns')} className="hover:text-primary transition-colors">Über uns</button>
           <button onClick={() => scrollToSection('kontakt')} className="hover:text-primary transition-colors">Kontakt</button>
         </div>
@@ -84,7 +83,6 @@ export default function Navbar() {
           >
             <div className="px-6 py-8 flex flex-col gap-6 text-lg">
               <button onClick={() => scrollToSection('leistungen')} className="text-left">Leistungen</button>
-              <button onClick={() => scrollToSection('warum')} className="text-left">Warum wir</button>
               <button onClick={() => scrollToSection('ueber-uns')} className="text-left">Über uns</button>
               <button onClick={() => scrollToSection('kontakt')} className="text-left">Kontakt</button>
               <a href="tel:+41441234567" className="flex items-center gap-2 text-primary">
