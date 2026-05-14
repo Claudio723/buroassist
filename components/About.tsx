@@ -17,13 +17,12 @@ export default function About() {
               Als Mutter von zwei Kindern und langjährige Büroleiterin weiss ich genau, wie kostbar jede Stunde ist – besonders wenn man ein eigenes Unternehmen führt.
             </p>
             <p>
-              2009 habe ich büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team über 120 KMU in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
+              2009 habe ich büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team viele kleine Unternehmen in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
             </p>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">Zürich & Umgebung</div>
-            <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">DSGVO-zertifiziert</div>
             <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">Familienbetrieb</div>
           </div>
         </div>
