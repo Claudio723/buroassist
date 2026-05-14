@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0F4C5C;
+  --accent: #C9A227;
+  --warm-bg: #FAF9F6;
+  --text-dark: #1F2937;
+  --text-muted: #6B7280;
+}
+
+body {
+  font-family: var(--font-manrope);
+  background-color: var(--warm-bg);
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.glass {
+  background: rgba(250, 249, 246, 0.85);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+.service-card {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-12px) rotate(0.3deg);
+  box-shadow: 0 40px 80px -20px rgb(15 76 92 / 0.25);
+}
+
+.floating {
+  animation: float 7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-18px) rotate(1.5deg); }
+}
+
+.testimonial-card {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 25px 50px -12px rgb(201 162 39 / 0.2);
+}
+
+.form-input {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(15, 76, 92, 0.12);
+  outline: none;
+}
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+  z-index: -1;
+}
+
+.cta-button:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 55%;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent), transparent);
+  border-radius: 9999px;
+}
