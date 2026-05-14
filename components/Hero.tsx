@@ -58,7 +58,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="text-text-muted">
-              Vertraut von <span className="font-semibold text-text-dark">120+ KMU</span>
+              Vertraut von <span className="font-semibold text-text-dark">vielen KMU</span> in der Schweiz
             </div>
           </div>
         </div>
