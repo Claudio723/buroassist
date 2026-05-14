@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary: #0F4C5C;
-  --accent: #C9A227;
-  --warm-bg: #FAF9F6;
-  --text-dark: #1F2937;
-  --text-muted: #6B7280;
+  --primary: #B76E79;      /* soft dusty rose */
+  --accent: #C9B27A;       /* subtle warm gold */
+  --warm-bg: #FDF8F5;      /* very light creamy blush */
+  --text-dark: #3F2E2E;
+  --text-muted: #7A6B6B;
 }
 
 body {
@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .glass {
-  background: rgba(250, 249, 246, 0.85);
+  background: rgba(253, 248, 245, 0.9);
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(15, 76, 92, 0.08);
+  border: 1px solid rgba(183, 110, 121, 0.1);
 }
 
 .service-card {
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
 
 .service-card:hover {
   transform: translateY(-12px) rotate(0.3deg);
-  box-shadow: 0 40px 80px -20px rgb(15 76 92 / 0.25);
+  box-shadow: 0 40px 80px -20px rgb(183 110 121 / 0.18);
 }
 
 .floating {
@@ -47,22 +47,13 @@ h1, h2, h3, h4, h5 {
   50% { transform: translateY(-18px) rotate(1.5deg); }
 }
 
-.testimonial-card {
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 25px 50px -12px rgb(201 162 39 / 0.2);
-}
-
 .form-input {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .form-input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(15, 76, 92, 0.12);
+  box-shadow: 0 0 0 4px rgba(183, 110, 121, 0.15);
   outline: none;
 }
 
@@ -79,7 +70,7 @@ h1, h2, h3, h4, h5 {
   left: 50%;
   width: 0;
   height: 0;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.35);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.6s, height 0.6s;
