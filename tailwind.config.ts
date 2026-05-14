@@ -13,11 +13,11 @@ const config: Config = {
         'sans-custom': ['var(--font-manrope)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        'primary': '#C48B9B',      // soft, pleasant, friendly dusty rose (less eye-catching)
-        'accent': '#C9B27A',       // subtle warm gold
-        'warm-bg': '#FFFBFA',      // ultra light - almost pure white with tiniest pink hint
-        'text-dark': '#3F2E2E',
-        'text-muted': '#7A6B6B',
+        'primary': '#1E3A5F',      // deep elegant navy - professional & trustworthy
+        'accent': '#C9B27A',       // subtle warm gold (kept for warmth)
+        'warm-bg': '#FAF9F6',      // clean warm off-white
+        'text-dark': '#1F2937',
+        'text-muted': '#6B7280',
       }
     },
   },
