@@ -33,9 +33,35 @@ npm run dev
 
 Die Seite läuft dann auf http://localhost:3000
 
-## Deployment
+## 🚀 Deployment auf Netlify (empfohlen)
 
-Einfach auf Vercel deployen – alles ist production-ready.
+### Schnellste Methode (2 Minuten):
+
+1. Gehe zu [netlify.com](https://app.netlify.com) und melde dich an (oder erstelle einen kostenlosen Account)
+2. Klicke auf **"Add new site"** → **"Import an existing project"**
+3. Wähle **GitHub** und autorisiere Netlify
+4. Wähle das Repository `Claudio723/buroassist`
+5. Netlify erkennt automatisch, dass es sich um eine Next.js-App handelt
+6. Die Einstellungen sind schon perfekt vorkonfiguriert:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+7. Klicke auf **"Deploy site"**
+
+Fertig! Deine Seite ist in ca. 1–2 Minuten live unter einer `.netlify.app` Adresse.
+
+### Wichtige Hinweise:
+- Das Kontaktformular funktioniert sofort (Netlify Functions + API-Routes werden automatisch unterstützt)
+- SSL-Zertifikat ist automatisch aktiviert
+- Du kannst später unter Site settings → Domain management eine eigene Domain (z.B. buroassist.ch) verbinden
+
+## Alternative: Manuelles Deployment
+
+Falls du die Seite selbst bauen und hochladen möchtest:
+
+```bash
+npm run build
+# Dann den Ordner `.next` bei Netlify hochladen
+```
 
 ---
 
