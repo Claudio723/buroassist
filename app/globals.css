@@ -5,7 +5,7 @@
 :root {
   --primary: #B76E79;      /* soft dusty rose */
   --accent: #C9B27A;       /* subtle warm gold */
-  --warm-bg: #FDF8F5;      /* very light creamy blush */
+  --warm-bg: #FFF9F8;      /* extremely light delicate pink (almost white) */
   --text-dark: #3F2E2E;
   --text-muted: #7A6B6B;
 }
@@ -23,9 +23,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .glass {
-  background: rgba(253, 248, 245, 0.9);
+  background: rgba(255, 249, 248, 0.92);
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(183, 110, 121, 0.1);
+  border: 1px solid rgba(183, 110, 121, 0.08);
 }
 
 .service-card {
@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
 
 .service-card:hover {
   transform: translateY(-12px) rotate(0.3deg);
-  box-shadow: 0 40px 80px -20px rgb(183 110 121 / 0.18);
+  box-shadow: 0 40px 80px -20px rgb(183 110 121 / 0.15);
 }
 
 .floating {
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5 {
 
 .form-input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(183, 110, 121, 0.15);
+  box-shadow: 0 0 0 4px rgba(183, 110, 121, 0.12);
   outline: none;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
   left: 50%;
   width: 0;
   height: 0;
-  background: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.4);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width 0.6s, height 0.6s;
