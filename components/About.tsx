@@ -13,11 +13,11 @@ export default function About() {
           
           <div className="space-y-7 text-xl text-text-muted leading-relaxed">
             <p>
-              Hallo, ich bin <span className="font-semibold text-text-dark">Maria Weber</span>. 
+              Hallo, ich bin <span className="font-semibold text-text-dark">Patrizia Steyskal</span>. 
               Als Mutter von zwei Kindern und langjährige Büroleiterin weiss ich genau, wie kostbar jede Stunde ist – besonders wenn man ein eigenes Unternehmen führt.
             </p>
             <p>
-              2009 habe ich büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team viele kleine Unternehmen in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
+              Ich habe büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team viele kleine Unternehmen in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
             </p>
           </div>
 
@@ -36,14 +36,14 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-accent opacity-90" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center text-white">
-              <div className="text-[120px] font-serif-custom font-bold tracking-tighter opacity-40">M</div>
-              <div className="-mt-8 text-4xl font-semibold tracking-tight">Maria Weber</div>
+              <div className="text-[120px] font-serif-custom font-bold tracking-tighter opacity-40">P</div>
+              <div className="-mt-8 text-4xl font-semibold tracking-tight">Patrizia Steyskal</div>
               <div className="text-white/70 mt-1">Gründerin & Geschäftsführerin</div>
             </div>
           </div>
           
           {/* Subtle office details */}
-          <div className="absolute bottom-8 right-8 text-white/40 text-xs tracking-[3px]">SEIT 2009 • ZÜRICH</div>
+          <div className="absolute bottom-8 right-8 text-white/40 text-xs tracking-[3px]">BINZSTRASSE 3 • ZÜRICH 8953</div>
         </motion.div>
       </div>
     </section>
