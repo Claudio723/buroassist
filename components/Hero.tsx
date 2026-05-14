@@ -34,20 +34,20 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <motion.button 
               onClick={scrollToKontakt}
-              className="cta-button group flex items-center justify-center gap-3 bg-primary hover:bg-primary/95 text-white px-10 py-4 rounded-3xl text-lg font-semibold shadow-xl shadow-primary/30 transition-all active:scale-[0.985]"
+              className="cta-button group flex items-center justify-center gap-3 bg-primary hover:bg-primary/95 text-white px-6 py-3 rounded-2xl text-base font-semibold shadow-lg shadow-primary/30 transition-all active:scale-[0.985]"
               whileHover={{ scale: 1.015 }}
               whileTap={{ scale: 0.985 }}
             >
-              Jetzt kostenloses Erstgespräch vereinbaren
+              Erstgespräch vereinbaren
               <ArrowRight className="group-hover:translate-x-1 transition" />
             </motion.button>
 
             <motion.button 
               onClick={() => document.getElementById('leistungen')?.scrollIntoView({ behavior: 'smooth' })}
-              className="flex items-center justify-center gap-3 px-8 py-4 rounded-3xl border border-primary/20 hover:bg-white text-lg font-medium transition-all"
+              className="flex items-center justify-center gap-2 px-6 py-3 rounded-2xl border border-primary/20 hover:bg-white text-base font-medium transition-all"
               whileHover={{ scale: 1.015 }}
             >
-              Leistungen entdecken
+              Leistungen ansehen
             </motion.button>
           </div>
 
