@@ -13,7 +13,7 @@ const config: Config = {
         'sans-custom': ['var(--font-manrope)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        'primary': '#B76E79',      // soft dusty rose
+        'primary': '#C48B9B',      // soft, pleasant, friendly dusty rose (less eye-catching)
         'accent': '#C9B27A',       // subtle warm gold
         'warm-bg': '#FFFBFA',      // ultra light - almost pure white with tiniest pink hint
         'text-dark': '#3F2E2E',
