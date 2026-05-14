@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #B76E79;      /* soft dusty rose */
-  --accent: #C9B27A;       /* subtle warm gold */
+  --primary: #C48B9B;      /* soft, pleasant, friendly dusty rose */
+  --accent: #C9B27A;       /* subtle warm gold
   --warm-bg: #FFFBFA;      /* ultra light - almost pure white with tiniest pink hint */
   --text-dark: #3F2E2E;
   --text-muted: #7A6B6B;
