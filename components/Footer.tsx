@@ -50,9 +50,9 @@ export default function Footer() {
           </div>
 
           <div className="mt-10 flex gap-5 text-xs">
-            <Link href="#" className="hover:text-white transition">Datenschutz</Link>
-            <Link href="#" className="hover:text-white transition">Impressum</Link>
-            <Link href="#" className="hover:text-white transition">AGB</Link>
+            <Link href="/datenschutz" className="hover:text-white transition">Datenschutz</Link>
+            <Link href="/impressum" className="hover:text-white transition">Impressum</Link>
+            <Link href="/agb" className="hover:text-white transition">AGB</Link>
           </div>
         </div>
       </div>
