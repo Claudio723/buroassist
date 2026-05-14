@@ -21,8 +21,8 @@ export default function Footer() {
           </div>
 
           <p className="max-w-sm text-white/70 text-[15px] leading-relaxed">
-            Professionelle Büroassistenz für kleine und mittlere Unternehmen. 
-            Mit Schweizer Präzision und persönlichem Service seit 2009.
+            Praktische Bürohilfe für kleine Unternehmen. 
+            Mit Schweizer Präzision und persönlichem Service.
           </p>
 
           <div className="mt-8 text-xs text-white/50">
@@ -49,9 +49,9 @@ export default function Footer() {
             <a href="tel:+41441234567" className="block hover:text-white transition">+41 41 123 45 67</a>
             
             <div className="pt-4 text-white/60 text-sm leading-relaxed">
-              Maria Weber<br />
-              Seestrasse 42<br />
-              8002 Zürich
+              Patrizia Steyskal<br />
+              Binzstrasse 3<br />
+              8953 Zürich
             </div>
           </div>
 
