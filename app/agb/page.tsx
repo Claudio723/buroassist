@@ -16,7 +16,7 @@ export default function AGBPage() {
         <div className="glass rounded-3xl p-10 md:p-14 shadow-xl space-y-8 text-text-muted leading-relaxed">
           <div>
             <h2 className="text-text-dark font-semibold text-lg mb-2">1. Geltungsbereich</h2>
-            <p>Diese AGB gelten für sämtliche Dienstleistungen von büroassist, Patrizia Steyskal, Binzstrasse 3, 8953 Zürich. Abweichende Vereinbarungen bedürfen der Schriftform.</p>
+            <p>Diese AGB gelten für sämtliche Dienstleistungen von büroassist, Patrizia Steyskal, Binzstrasse 3, 8953 Dietikon. Abweichende Vereinbarungen bedürfen der Schriftform.</p>
           </div>
 
           <div>

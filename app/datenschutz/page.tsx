@@ -16,7 +16,7 @@ export default function DatenschutzPage() {
         <div className="glass rounded-3xl p-10 md:p-14 shadow-xl space-y-8 text-text-muted leading-relaxed">
           <div>
             <h2 className="text-text-dark font-semibold text-lg mb-2">1. Verantwortliche Stelle</h2>
-            <p>Patrizia Steyskal, Binzstrasse 3, 8953 Zürich, Schweiz</p>
+            <p>Patrizia Steyskal, Binzstrasse 3, 8953 Dietikon, Schweiz</p>
             <p>E-Mail: <a href="mailto:info@bueroassist.ch" className="text-accent hover:underline">info@bueroassist.ch</a></p>
           </div>
 
