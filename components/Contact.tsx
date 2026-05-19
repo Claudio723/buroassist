@@ -74,7 +74,7 @@ ${data.vorname} ${data.nachname}`
       <div className="text-center mb-14">
         <div className="text-accent text-sm font-semibold tracking-[2px] mb-3">BEREIT FÜR ENTLASTUNG?</div>
         <h2 className="section-heading text-6xl tracking-tighter mb-5">Lassen Sie uns reden.</h2>
-        <p className="text-xl text-text-muted max-w-md mx-auto">Vereinbaren Sie ein unverbindliches 20-Minuten-Gespräch. Wir freuen uns auf Sie.</p>
+        <p className="text-xl text-text-muted max-w-md mx-auto">Vereinbaren Sie ein unverbindliches Gespräch. Wir freuen uns auf Sie.</p>
       </div>
 
       <div className="glass rounded-3xl p-10 md:p-14 shadow-xl relative overflow-hidden">

@@ -51,7 +51,7 @@ export default function Navbar() {
               href="/#kontakt"
               className="cta-button px-6 py-2.5 bg-primary text-white text-sm font-semibold rounded-2xl flex items-center gap-2 hover:bg-primary/90 transition-all active:scale-[0.985]"
             >
-              Kostenloses Gespräch
+              Erstgespräch vereinbaren
             </Link>
           </motion.div>
 
