@@ -117,7 +117,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-20 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-xs tracking-[3px] text-text-muted">
+      <div className="mt-auto pb-8 flex flex-col items-center gap-1 text-xs tracking-[3px] text-text-muted">
         SCROLL TO EXPLORE
         <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 2, repeat: Infinity }} className="text-lg">↓</motion.div>
       </div>
