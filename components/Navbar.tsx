@@ -18,14 +18,12 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center">
-            <span className="text-white font-serif-custom text-2xl font-semibold">b</span>
-          </div>
-          <div>
-            <div className="font-serif-custom text-2xl tracking-tighter text-primary">büroassist</div>
-            <div className="text-[10px] text-text-muted -mt-1">KMU Büroexpertise</div>
-          </div>
+        <Link href="/" className="flex items-center h-9">
+          <img 
+            src="/logo.png" 
+            alt="büroassist" 
+            className="h-full w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Links */}
