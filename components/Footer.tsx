@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/logo.png"
               alt="büroassist"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain brightness-0 invert"
             />
           </div>
 
