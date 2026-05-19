@@ -7,12 +7,11 @@ export default function Footer() {
     <footer className="bg-primary text-white/90 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-y-16">
         <div className="md:col-span-5">
-          <div className="flex items-center mb-6">
-            <img 
-              src="/logo.png" 
-              alt="büroassist" 
-              className="h-10 w-auto object-contain brightness-0 invert"
-            />
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-9 h-9 bg-white/90 rounded-xl flex items-center justify-center">
+              <span className="text-primary font-serif-custom text-2xl font-semibold">b</span>
+            </div>
+            <div className="font-serif-custom text-3xl tracking-tighter text-white">büroassist</div>
           </div>
 
           <p className="max-w-sm text-white/70 text-[15px] leading-relaxed">
