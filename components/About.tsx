@@ -9,16 +9,11 @@ export default function About() {
         <div>
           <div className="text-accent text-sm font-semibold tracking-[2px] mb-4">DIE GESCHICHTE HINTER BÜROASSIST</div>
           
-          <h2 className="text-6xl tracking-tighter leading-none mb-10">Gegründet mit Herz und Präzision.</h2>
-          
-          <div className="space-y-7 text-xl text-text-muted leading-relaxed">
+          <h2 className="text-6xl tracking-tighter leading-none mb-10">Organisation, die wirkt.</h2>
+
+          <div className="text-xl text-text-muted leading-relaxed">
             <p>
-              Zu viele kleine Unternehmen ersticken in administrativen Aufgaben – statt sich auf das zu konzentrieren, was sie wirklich können.
-              <span className="font-semibold text-text-dark"> büroassist</span> wurde aus der Überzeugung geboren, dass pragmatische Bürohilfe nicht kompliziert sein muss.
-            </p>
-            <p>
-              Nicht als klassische Büroleiterin, sondern aus echter Leidenschaft für Organisation und Effizienz:
-              persönliche Unterstützung für kleine Firmen in der ganzen Schweiz – unkompliziert und mit dem Pragmatismus, der im Alltag wirklich hilft.
+              Zu viel Papierkram, zu wenig Zeit? <span className="font-semibold text-text-dark">büroassist</span> hilft kleinen Unternehmen bei administrativen Aufgaben – pragmatisch, persönlich und mit echter Leidenschaft für Organisation.
             </p>
           </div>
 

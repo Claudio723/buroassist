@@ -29,9 +29,8 @@ export default function Footer() {
           <div className="space-y-3 text-white/80">
             <div>Buchhaltung & Finanzen</div>
             <div>Korrespondenz & Kommunikation</div>
-            <div>Termin- & Aufgabenmanagement</div>
             <div>Virtuelle Assistenz</div>
-            <div>Datenschutz & Compliance</div>
+            <div>Flexible Stundenmodelle</div>
           </div>
         </div>
 
