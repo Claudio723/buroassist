@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar, Users } from 'lucide-react';
+import { ArrowRight, FileText, Mail, CheckCircle } from 'lucide-react';
 
 export default function Hero() {
   const scrollToKontakt = () => {
@@ -58,7 +58,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="text-text-muted">
-              Vertraut von <span className="font-semibold text-text-dark">vielen kleinen Unternehmen</span>
+              Vertraut von <span className="font-semibold text-text-dark">kleinen Unternehmen</span>
             </div>
           </div>
         </div>
@@ -67,35 +67,35 @@ export default function Hero() {
         <div className="md:col-span-5 relative h-[520px] hidden md:block">
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Floating Office Elements */}
-            <motion.div 
-              className="absolute top-[12%] left-[8%] glass w-40 h-40 rounded-3xl p-6 shadow-2xl"
+            <motion.div
+              className="absolute top-[12%] left-[8%] glass w-44 h-40 rounded-3xl p-6 shadow-2xl"
               animate={{ y: [0, -25, 0], rotate: [-3, 2, -3] }}
               transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className="text-primary/80 mb-3">
-                <Calendar className="w-9 h-9" />
+                <FileText className="w-9 h-9" />
               </div>
-              <div className="font-semibold text-lg">Termine</div>
-              <div className="text-sm text-text-muted mt-1">12 heute</div>
+              <div className="font-semibold text-lg">Buchhaltung</div>
+              <div className="text-sm text-text-muted mt-1">Rechnungen & Mahnwesen</div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="absolute top-[38%] right-[12%] glass w-48 h-32 rounded-3xl p-6 shadow-2xl"
               animate={{ y: [0, 18, 0], rotate: [2, -4, 2] }}
               transition={{ duration: 6.2, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
             >
               <div className="flex items-center gap-3">
                 <div className="text-accent">
-                  <Users className="w-8 h-8" />
+                  <Mail className="w-8 h-8" />
                 </div>
                 <div>
-                  <div className="font-semibold">Team</div>
-                  <div className="text-xs text-text-muted">4 Mitglieder</div>
+                  <div className="font-semibold">Posteingang</div>
+                  <div className="text-xs text-text-muted">Korrespondenz erledigt</div>
                 </div>
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="absolute bottom-[18%] left-[22%] glass w-56 h-36 rounded-3xl p-6 shadow-2xl"
               animate={{ y: [0, -15, 0], rotate: [-1, 3, -1] }}
               transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2.5 }}
@@ -103,10 +103,10 @@ export default function Hero() {
               <div className="text-primary mb-2 text-sm font-medium">Heutige Aufgaben</div>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-accent rounded-full" /> Buchhaltung Q3
+                  <CheckCircle className="w-3.5 h-3.5 text-accent" /> Buchhaltung Q3
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-primary rounded-full" /> Rechnungen versenden
+                  <CheckCircle className="w-3.5 h-3.5 text-primary" /> Kundenanfragen beantworten
                 </div>
               </div>
             </motion.div>

@@ -42,7 +42,7 @@ export default function About() {
           </div>
           
           {/* Subtle office details */}
-          <div className="absolute bottom-8 right-8 text-white/40 text-xs tracking-[3px]">BINZSTRASSE 3 • ZÜRICH 8953</div>
+          <div className="absolute bottom-8 right-8 text-white/40 text-xs tracking-[3px]">BINZSTRASSE 3 • DIETIKON 8953</div>
         </motion.div>
       </div>
     </section>
