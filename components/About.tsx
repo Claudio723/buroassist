@@ -13,17 +13,18 @@ export default function About() {
           
           <div className="space-y-7 text-xl text-text-muted leading-relaxed">
             <p>
-              Hallo, ich bin <span className="font-semibold text-text-dark">Patrizia Steyskal</span>. 
-              Als langjährige Büroleiterin und Mutter weiss ich genau, wie kostbar jede Stunde ist – besonders wenn man ein eigenes Unternehmen führt.
+              Zu viele kleine Unternehmen ersticken in administrativen Aufgaben – statt sich auf das zu konzentrieren, was sie wirklich können.
+              <span className="font-semibold text-text-dark"> büroassist</span> wurde aus der Überzeugung geboren, dass pragmatische Bürohilfe nicht kompliziert sein muss.
             </p>
             <p>
-              Ich habe büroassist gegründet, weil ich gesehen habe, wie viele kleine Firmen an administrativen Aufgaben ersticken. Heute unterstütze ich mit meinem Team viele kleine Unternehmen in der ganzen Schweiz – mit persönlichem Service, der sich anfühlt wie ein verlässlicher Kollege im Nebenbüro.
+              Nicht als klassische Büroleiterin, sondern aus echter Leidenschaft für Organisation und Effizienz:
+              persönliche Unterstützung für kleine Firmen in der ganzen Schweiz – unkompliziert und mit dem Pragmatismus, der im Alltag wirklich hilft.
             </p>
           </div>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">Zürich & Umgebung</div>
-            <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">Familienbetrieb</div>
+            <div className="px-5 py-2 rounded-2xl bg-primary/10 text-primary text-sm font-medium">Persönlich & Unabhängig</div>
           </div>
         </div>
 

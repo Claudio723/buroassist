@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { BookOpen, Mail, CalendarCheck, Users, ShieldCheck, Clock } from 'lucide-react';
+import { BookOpen, Mail, Users, Clock } from 'lucide-react';
 
 const services = [
   {
     icon: BookOpen,
     title: "Buchhaltung & Finanzen",
-    desc: "Laufende Buchführung, Rechnungsstellung, Mahnwesen und Jahresabschlussvorbereitung – alles DSGVO-konform.",
+    desc: "Rechnungsstellung, Mahnwesen und Jahresabschlussvorbereitung.",
     highlight: "Stunden pro Monat sparen"
   },
   {
@@ -17,27 +17,15 @@ const services = [
     highlight: "Immer professionell"
   },
   {
-    icon: CalendarCheck,
-    title: "Termin- & Aufgabenmanagement",
-    desc: "Kalenderpflege, Meeting-Koordination, To-Do-Listen und Erinnerungen – Sie bleiben immer auf dem Laufenden.",
-    highlight: "Nie wieder Termine verpassen"
-  },
-  {
     icon: Users,
     title: "Virtuelle Assistenz",
-    desc: "Persönliche Unterstützung bei Projekten, Recherchen, Präsentationen und administrativen Aufgaben.",
+    desc: "Persönliche Unterstützung bei administrativen Aufgaben.",
     highlight: "Ihr verlängertes Team"
-  },
-  {
-    icon: ShieldCheck,
-    title: "Datenschutz & Compliance",
-    desc: "Sichere Datenverarbeitung, DSGVO-Umsetzung und regelmässige Audits für maximale Sicherheit.",
-    highlight: "Schweizer Standard"
   },
   {
     icon: Clock,
     title: "Flexible Stundenmodelle",
-    desc: "Stunden- oder Pauschalverträge. Sie zahlen nur für das, was Sie wirklich brauchen – skalierbar mit Ihrem Wachstum.",
+    desc: "Nach Absprache.",
     highlight: "100% flexibel"
   }
 ];
