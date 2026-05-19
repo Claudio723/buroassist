@@ -7,13 +7,16 @@ export default function About() {
     <section id="ueber-uns" className="max-w-5xl mx-auto px-6 py-24 md:py-32">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <div className="text-accent text-sm font-semibold tracking-[2px] mb-4">DIE GESCHICHTE HINTER BÜROASSIST</div>
-          
-          <h2 className="text-6xl tracking-tighter leading-none mb-10">Organisation, die wirkt.</h2>
+          <div className="text-accent text-sm font-semibold tracking-[2px] mb-4">WER STECKT DAHINTER</div>
 
-          <div className="text-xl text-text-muted leading-relaxed">
+          <h2 className="text-6xl tracking-tighter leading-none mb-10">Persönlich. Praktisch. Unkompliziert.</h2>
+
+          <div className="space-y-7 text-xl text-text-muted leading-relaxed">
             <p>
-              Zu viel Papierkram, zu wenig Zeit? <span className="font-semibold text-text-dark">büroassist</span> hilft kleinen Unternehmen bei administrativen Aufgaben – pragmatisch, persönlich und mit echter Leidenschaft für Organisation.
+              Zu viel Papierkram, zu wenig Zeit? Ich helfe kleinen Unternehmen bei administrativen Aufgaben – pragmatisch und mit echter Leidenschaft für Organisation.
+            </p>
+            <p>
+              Keine Agentur, kein Callcenter. Einfach persönliche Unterstützung für kleine Firmen in der ganzen Schweiz, unkompliziert und zuverlässig.
             </p>
           </div>
 
