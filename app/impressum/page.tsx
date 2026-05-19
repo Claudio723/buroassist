@@ -23,7 +23,7 @@ export default function ImpressumPage() {
 
           <div>
             <h2 className="text-text-dark font-semibold text-lg mb-2">Kontakt</h2>
-            <p>E-Mail: <a href="mailto:info@buroassist.ch" className="text-accent hover:underline">info@buroassist.ch</a></p>
+            <p>E-Mail: <a href="mailto:info@bueroassist.ch" className="text-accent hover:underline">info@bueroassist.ch</a></p>
             <p>Telefon: <a href="tel:+41441234567" className="text-accent hover:underline">+41 41 123 45 67</a></p>
           </div>
 

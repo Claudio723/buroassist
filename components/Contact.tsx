@@ -51,7 +51,7 @@ ${data.vorname} ${data.nachname}`
     );
 
     // Open default mail client
-    window.location.href = `mailto:info@buroassist.ch?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@bueroassist.ch?subject=${subject}&body=${body}`;
 
     // Show success animation
     setTimeout(() => {

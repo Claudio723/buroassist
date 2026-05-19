@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="font-semibold text-white mb-5 tracking-wider text-xs">KONTAKT</div>
           
           <div className="space-y-4 text-[15px]">
-            <a href="mailto:info@buroassist.ch" className="block hover:text-white transition">info@buroassist.ch</a>
+            <a href="mailto:info@bueroassist.ch" className="block hover:text-white transition">info@bueroassist.ch</a>
             <a href="tel:+41441234567" className="block hover:text-white transition">+41 41 123 45 67</a>
             
             <div className="pt-4 text-white/60 text-sm leading-relaxed">
