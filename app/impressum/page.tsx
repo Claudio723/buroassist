@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum | büroassist",
-  description: "Impressum und rechtliche Angaben – büroassist, Patrizia Steyskal, Zürich.",
+  description: "Impressum und rechtliche Angaben – büroassist, Patrizia Steyskal, Dietikon.",
 };
 
 export default function ImpressumPage() {
@@ -30,6 +30,13 @@ export default function ImpressumPage() {
           <div>
             <h2 className="text-text-dark font-semibold text-lg mb-2">Vertretungsberechtigte Person</h2>
             <p>Patrizia Steyskal</p>
+          </div>
+
+          <div>
+            <h2 className="text-text-dark font-semibold text-lg mb-2">Unternehmensidentifikation</h2>
+            <p>UID: [Noch einzutragen]</p>
+            <p>MWST-Nummer: [Falls anwendbar, noch einzutragen]</p>
+            <p>Handelsregisternummer: [Noch einzutragen]</p>
           </div>
 
           <div>

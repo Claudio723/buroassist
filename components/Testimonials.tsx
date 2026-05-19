@@ -15,7 +15,7 @@ const testimonials = [
     name: "Elena Rossi",
     company: "Studio Rossi, Zürich",
     role: "Inhaberin & Architektin",
-    quote: "Die Flexibilität ist unschlagbar. Mal brauche ich 8 Stunden im Monat, mal 25. Maria und ihr Team passen sich perfekt an. Die Qualität der Arbeit ist auf Top-Niveau.",
+    quote: "Die Flexibilität ist unschlagbar. Mal brauche ich 8 Stunden im Monat, mal 25. Patrizia und ihr Team passen sich perfekt an. Die Qualität der Arbeit ist auf Top-Niveau.",
     rating: 5
   },
   {
