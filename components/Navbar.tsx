@@ -49,9 +49,10 @@ export default function Navbar() {
           >
             <Link
               href="/#kontakt"
-              className="cta-button px-6 py-2.5 bg-primary text-white text-sm font-semibold rounded-2xl flex items-center gap-2 hover:bg-primary/90 transition-all active:scale-[0.985]"
+              className="cta-button px-3 py-2 sm:px-6 sm:py-2.5 bg-primary text-white text-xs sm:text-sm font-semibold rounded-2xl flex items-center gap-2 hover:bg-primary/90 transition-all active:scale-[0.985] whitespace-nowrap"
             >
-              Erstgespräch vereinbaren
+              <span className="sm:hidden">Kontakt</span>
+              <span className="hidden sm:inline">Erstgespräch vereinbaren</span>
             </Link>
           </motion.div>
 
