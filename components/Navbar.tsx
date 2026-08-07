@@ -17,14 +17,13 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Logo - clean typographic */}
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-sm group-hover:shadow-md transition-shadow">
-            <span className="text-white font-bold text-lg leading-none">b</span>
-          </div>
-          <span className="text-xl font-semibold tracking-tight text-primary">
-            büro<span className="font-normal text-text-dark">assist</span>
-          </span>
+        {/* Logo */}
+        <Link href="/" className="flex items-center h-10 text-primary">
+          <img 
+            src="/logo.svg" 
+            alt="büroassist" 
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Links */}
