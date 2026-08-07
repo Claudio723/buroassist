@@ -1,32 +1,28 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { TrendingUp, Heart, Award, Zap } from 'lucide-react';
+import { Clock, Heart, Handshake, Zap } from 'lucide-react';
 
 const benefits = [
   {
-    icon: TrendingUp,
-    stat: "38 Std",
-    label: "Durchschnittliche Zeitersparnis pro Monat",
-    desc: "Mehr Zeit für das, was wirklich zählt: Ihr Kerngeschäft."
+    icon: Clock,
+    title: "Zeit sparen",
+    desc: "Administrative Aufgaben landen bei mir. Sie können sich auf das konzentrieren, was Ihr Unternehmen voranbringt."
   },
   {
     icon: Heart,
-    stat: "97 %",
-    label: "Kundenzufriedenheit",
-    desc: "Unsere Kunden bleiben im Schnitt über 3 Jahre bei uns."
+    title: "Persönlich",
+    desc: "Keine Warteschleife, kein Ticket-System. Sie sprechen direkt mit mir – und ich kenne Ihr Geschäft."
   },
   {
-    icon: Award,
-    stat: "15+ Jahre",
-    label: "Erfahrung in der Büroorganisation",
-    desc: "Seit 2009 unterstützen wir Schweizer KMU mit Leidenschaft."
+    icon: Handshake,
+    title: "Zuverlässig",
+    desc: "Termine, Fristen und Absprachen werden eingehalten. Darauf können Sie sich verlassen."
   },
   {
     icon: Zap,
-    stat: "4 Std",
-    label: "Reaktionszeit bei Anfragen",
-    desc: "Schnell, persönlich und immer erreichbar."
+    title: "Flexibel",
+    desc: "Mal mehr, mal weniger. Der Aufwand richtet sich nach dem, was gerade anfällt – nicht nach einem starren Vertrag."
   }
 ];
 
@@ -38,9 +34,9 @@ export default function Benefits() {
           <div className="lg:col-span-5">
             <div className="sticky top-24">
               <div className="text-accent/80 text-sm font-semibold tracking-[2.5px] mb-4">WARUM KLEINE UNTERNEHMEN UNS WÄHLEN</div>
-              <h2 className="text-6xl md:text-[68px] leading-none tracking-tighter mb-8">Weil Zeit das neue Gold ist.</h2>
+              <h2 className="text-6xl md:text-[68px] leading-none tracking-tighter mb-8">Weil Zeit kostbar ist.</h2>
               <p className="text-xl text-white/70 max-w-md">
-                Wir sind nicht einfach nur eine Dienstleistung. Wir sind Ihr verlässlicher Partner im Hintergrund.
+                Ich arbeite im Hintergrund, damit Sie vorne mehr erreichen.
               </p>
             </div>
           </div>
@@ -57,11 +53,10 @@ export default function Benefits() {
                   transition={{ delay: 0.1 * index }}
                   className="glass bg-white/5 border border-white/10 rounded-3xl p-10 group"
                 >
-                  <div className="flex justify-between items-start mb-10">
-                    <div className="text-7xl font-semibold tracking-tighter text-white/90 tabular-nums">{benefit.stat}</div>
+                  <div className="flex justify-between items-start mb-8">
                     <Icon className="w-9 h-9 text-accent group-hover:rotate-12 transition" />
                   </div>
-                  <div className="text-2xl font-semibold tracking-tight mb-3 text-white">{benefit.label}</div>
+                  <div className="text-2xl font-semibold tracking-tight mb-3 text-white">{benefit.title}</div>
                   <p className="text-white/60 leading-relaxed">{benefit.desc}</p>
                 </motion.div>
               );
