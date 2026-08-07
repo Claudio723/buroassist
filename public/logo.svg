@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Icon: rounded square with "b" -->
+  <rect x="0" y="6" width="48" height="48" rx="12" fill="currentColor"/>
+  <text x="24" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="28" fill="white">b</text>
+  
+  <!-- Wordmark -->
+  <text x="60" y="40" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="28" fill="currentColor" letter-spacing="-0.5">büro</text>
+  <text x="132" y="40" font-family="system-ui, -apple-system, sans-serif" font-weight="400" font-size="28" fill="currentColor" letter-spacing="-0.5">assist</text>
+</svg>
