@@ -18,11 +18,11 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center h-12">
+        <Link href="/" className="flex items-center h-14">
           <img 
             src="/logo.svg" 
             alt="büroassist" 
-            className="h-12 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
