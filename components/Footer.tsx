@@ -7,13 +7,12 @@ export default function Footer() {
     <footer className="bg-primary text-white/90 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-y-16">
         <div className="md:col-span-5">
-          <div className="flex items-center gap-2.5 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center">
-              <span className="text-white font-bold text-base leading-none">b</span>
-            </div>
-            <span className="text-lg font-semibold tracking-tight text-white">
-              büro<span className="font-normal text-white/80">assist</span>
-            </span>
+          <div className="flex items-center mb-6">
+            <img
+              src="/logo.svg"
+              alt="büroassist"
+              className="h-9 w-auto brightness-0 invert"
+            />
           </div>
 
           <p className="max-w-sm text-white/70 text-[15px] leading-relaxed">
