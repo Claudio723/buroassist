@@ -8,21 +8,21 @@ const testimonials = [
     name: "Thomas Keller",
     company: "Keller Holzbau GmbH, Zug",
     role: "Geschäftsführer",
-    quote: "Seit zwei Jahren übernimmt büroassist unsere komplette Buchhaltung und Korrespondenz. Ich habe endlich wieder Zeit für meine Kunden und die Weiterentwicklung des Betriebs. Absolut empfehlenswert!",
+    quote: "Seit zwei Jahren macht büroassist unsere Buchhaltung und Korrespondenz. Ich habe endlich wieder Zeit für Kunden und den Betrieb. Sehr empfehlenswert.",
     rating: 5
   },
   {
     name: "Elena Rossi",
     company: "Studio Rossi, Zürich",
     role: "Inhaberin & Architektin",
-    quote: "Die Flexibilität ist unschlagbar. Mal brauche ich 8 Stunden im Monat, mal 25. Patrizia und ihr Team passen sich perfekt an. Die Qualität der Arbeit ist auf Top-Niveau.",
+    quote: "Die Flexibilität stimmt. Mal brauche ich 8 Stunden im Monat, mal 25. Patrizia passt sich an – und die Arbeit ist sauber.",
     rating: 5
   },
   {
     name: "Markus Brunner",
     company: "Brunner & Partner Treuhand, St. Gallen",
     role: "Partner",
-    quote: "Als Treuhänder schätze ich besonders die absolute Zuverlässigkeit und Diskretion. Unsere Mandanten sind begeistert, wenn ich sage, dass wir die Admin-Arbeiten auslagern. Eine echte Win-Win-Situation.",
+    quote: "Zuverlässig und diskret. Genau das, was man braucht, wenn man administrative Arbeiten abgeben will.",
     rating: 5
   }
 ];
@@ -32,7 +32,7 @@ export default function Testimonials() {
     <section className="max-w-7xl mx-auto px-6 py-24 border-t border-primary/10">
       <div className="text-center mb-16">
         <div className="text-accent text-sm font-semibold tracking-[2px] mb-3">STIMMEN AUS DER PRAXIS</div>
-        <h2 className="section-heading text-6xl tracking-tighter">Was unsere Kunden sagen.</h2>
+        <h2 className="section-heading text-6xl tracking-tighter">Was Kunden sagen.</h2>
       </div>
 
       <div className="grid md:grid-cols-3 gap-6">
