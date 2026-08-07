@@ -16,11 +16,6 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center relative z-10">
         {/* Left Content */}
         <div className="md:col-span-7 space-y-8">
-          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-            <div className="w-2 h-2 bg-accent rounded-full animate-pulse" /> 
-            Persönliche Betreuung für kleine Unternehmen
-          </div>
-
           <h1 className="text-6xl md:text-7xl lg:text-[84px] leading-[1.05] tracking-tighter font-semibold text-balance">
             Ihre Zeit ist<br /> zu wertvoll.<br /> 
             <span className="text-primary">Wir übernehmen<br /> den Rest.</span>
