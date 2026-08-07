@@ -22,8 +22,8 @@ export default function Hero() {
           </h1>
 
           <p className="max-w-[520px] text-xl text-text-muted leading-relaxed">
-            Praktische Bürohilfe für kleine Unternehmen in der Schweiz. 
-            Buchhaltung, Korrespondenz, Organisation und vieles mehr – alles aus einer Hand.
+            Bürohilfe für kleine Unternehmen in der Schweiz. 
+            Buchhaltung, Korrespondenz und Organisation – unkompliziert und persönlich.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -53,7 +53,7 @@ export default function Hero() {
               ))}
             </div>
             <div className="text-text-muted">
-              Vertraut von <span className="font-semibold text-text-dark">kleinen Unternehmen</span>
+              Für <span className="font-semibold text-text-dark">kleine Unternehmen</span> in der Schweiz
             </div>
           </div>
         </div>
@@ -61,7 +61,6 @@ export default function Hero() {
         {/* Right Visual */}
         <div className="md:col-span-5 relative h-[520px] hidden md:block">
           <div className="absolute inset-0 flex items-center justify-center">
-            {/* Floating Office Elements */}
             <motion.div
               className="absolute top-[12%] left-[8%] glass w-44 h-40 rounded-3xl p-6 shadow-2xl"
               animate={{ y: [0, -25, 0], rotate: [-3, 2, -3] }}
@@ -106,7 +105,6 @@ export default function Hero() {
               </div>
             </motion.div>
 
-            {/* Central glowing orb */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] bg-gradient-to-br from-primary/10 via-accent/10 to-transparent rounded-full blur-3xl" />
           </div>
         </div>
