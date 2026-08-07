@@ -16,8 +16,7 @@ export default function Footer() {
           </div>
 
           <p className="max-w-sm text-white/70 text-[15px] leading-relaxed">
-            Praktische Bürohilfe für kleine Unternehmen. 
-            Mit Schweizer Präzision und persönlichem Service.
+            Bürohilfe für kleine Unternehmen in der Schweiz. Persönlich und unkompliziert.
           </p>
 
           <div className="mt-8 text-xs text-white/50">
@@ -58,7 +57,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-20 pt-8 border-t border-white/10 text-center text-[10px] text-white/40 tracking-[1px]">
-        MADE WITH ❤️ FOR SMALL BUSINESSES IN SWITZERLAND
+        FÜR KLEINE UNTERNEHMEN IN DER SCHWEIZ
       </div>
     </footer>
   );
