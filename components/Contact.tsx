@@ -9,12 +9,12 @@ import { Loader2, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const formSchema = z.object({
-  vorname: z.string().min(2, "Bitte geben Sie Ihren Vornamen ein"),
-  nachname: z.string().min(2, "Bitte geben Sie Ihren Nachnamen ein"),
-  email: z.string().email("Bitte gültige E-Mail-Adresse eingeben"),
-  firma: z.string().min(2, "Firmenname ist erforderlich"),
+  vorname: z.string().min(2, "Bitte Vornamen angeben"),
+  nachname: z.string().min(2, "Bitte Nachnamen angeben"),
+  email: z.string().email("Bitte gültige E-Mail-Adresse angeben"),
+  firma: z.string().min(2, "Firmenname fehlt"),
   telefon: z.string().optional(),
-  nachricht: z.string().min(15, "Ihre Nachricht sollte etwas ausführlicher sein"),
+  nachricht: z.string().min(10, "Schreiben Sie uns gerne ein paar Sätze"),
   termin: z.string().optional(),
 });
 
@@ -31,29 +31,13 @@ export default function Contact() {
   const onSubmit = (data: FormData) => {
     setIsSubmitting(true);
 
-    // Create mailto link with prefilled content
     const subject = encodeURIComponent(`Anfrage von ${data.vorname} ${data.nachname} (${data.firma})`);
     const body = encodeURIComponent(
-      `Hallo Patrizia,
-
-Mein Name ist ${data.vorname} ${data.nachname}.
-Firma: ${data.firma}
-E-Mail: ${data.email}
-${data.telefon ? `Telefon: ${data.telefon}
-` : ''}${data.termin ? `Wunschtermin: ${data.termin}
-` : ''}
-
-Nachricht:
-${data.nachricht}
-
-Vielen Dank!
-${data.vorname} ${data.nachname}`
+      `Hallo Patrizia,\n\nMein Name ist ${data.vorname} ${data.nachname}.\nFirma: ${data.firma}\nE-Mail: ${data.email}\n${data.telefon ? `Telefon: ${data.telefon}\n` : ''}${data.termin ? `Wunschtermin: ${data.termin}\n` : ''}\n\nNachricht:\n${data.nachricht}\n\nVielen Dank\n${data.vorname} ${data.nachname}`
     );
 
-    // Open default mail client
     window.location.href = `mailto:info@bueroassist.ch?subject=${subject}&body=${body}`;
 
-    // Show success animation
     setTimeout(() => {
       setIsSuccess(true);
       confetti({
@@ -74,7 +58,7 @@ ${data.vorname} ${data.nachname}`
       <div className="text-center mb-14">
         <div className="text-accent text-sm font-semibold tracking-[2px] mb-3">BEREIT FÜR ENTLASTUNG?</div>
         <h2 className="section-heading text-6xl tracking-tighter mb-5">Lassen Sie uns reden.</h2>
-        <p className="text-xl text-text-muted max-w-md mx-auto">Vereinbaren Sie ein unverbindliches Gespräch. Wir freuen uns auf Sie.</p>
+        <p className="text-xl text-text-muted max-w-md mx-auto">Unverbindliches Gespräch – ich freue mich auf Ihre Nachricht.</p>
       </div>
 
       <div className="glass rounded-3xl p-10 md:p-14 shadow-xl relative overflow-hidden">
@@ -156,7 +140,7 @@ ${data.vorname} ${data.nachname}`
                   {...register('nachricht')}
                   rows={6}
                   className="form-input w-full px-6 py-4 rounded-3xl border border-primary/20 bg-white text-lg placeholder:text-text-muted/60 resize-y min-h-[140px]"
-                  placeholder="Hallo Patrizia, ich würde gerne mehr über Ihre Bürohilfe erfahren und einen passenden Termin finden..."
+                  placeholder="Hallo Patrizia, ich würde gerne mehr über Ihre Bürohilfe erfahren..."
                 />
                 {errors.nachricht && <p className="text-red-500 text-sm mt-1.5">{errors.nachricht.message}</p>}
               </div>
@@ -173,11 +157,11 @@ ${data.vorname} ${data.nachname}`
                     <Loader2 className="w-5 h-5 animate-spin" /> Wird gesendet...
                   </>
                 ) : (
-                  "Kostenloses Beratungsgespräch anfragen"
+                  "Gespräch anfragen"
                 )}
               </motion.button>
 
-              <p className="text-center text-xs text-text-muted pt-3">Klicken Sie auf „Senden“ – Ihr Standard-Mail-Programm öffnet sich automatisch mit den ausgefüllten Daten.</p>
+              <p className="text-center text-xs text-text-muted pt-3">Ihr Mail-Programm öffnet sich mit den ausgefüllten Daten.</p>
             </motion.form>
           ) : (
             <motion.div 
@@ -191,7 +175,7 @@ ${data.vorname} ${data.nachname}`
               </div>
               <h3 className="text-4xl font-semibold tracking-tight mb-4">Vielen Dank!</h3>
               <p className="text-xl text-text-muted max-w-sm mx-auto">
-                Ihr Mail-Programm sollte sich jetzt geöffnet haben. Wir melden uns schnellstmöglich bei Ihnen.
+                Ihr Mail-Programm sollte sich geöffnet haben. Ich melde mich so schnell wie möglich.
               </p>
               <div className="mt-8 text-sm text-emerald-600 font-medium">Patrizia Steyskal • büroassist</div>
             </motion.div>
