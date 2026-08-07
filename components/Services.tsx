@@ -7,27 +7,27 @@ const services = [
   {
     icon: BookOpen,
     title: "Buchhaltung & Finanzen",
-    desc: "Rechnungsstellung, Mahnwesen, Zahlungsverkehr und Jahresabschlussvorbereitung. Wir entlasten Sie bei der Finanzverwaltung – praktisch, zuverlässig und auf Ihre Bedürfnisse abgestimmt.",
-    highlight: "Mehr Zeit für Ihr Kerngeschäft",
+    desc: "Rechnungen schreiben, Mahnungen verschicken, Zahlungen im Blick behalten und den Jahresabschluss vorbereiten. Ich nehme Ihnen die Zahlenarbeit ab.",
+    highlight: "Mehr Zeit für Ihr Geschäft",
     featured: true
   },
   {
     icon: Mail,
     title: "Korrespondenz & Kommunikation",
-    desc: "E-Mail-Management, Briefe und Kundenanfragen – professionelle Geschäftskorrespondenz in Ihrem Namen.",
-    highlight: "Immer professionell"
+    desc: "E-Mails, Briefe und Kundenanfragen – ich erledige die Korrespondenz in Ihrem Namen, professionell und pünktlich.",
+    highlight: "Immer gut vertreten"
   },
   {
     icon: Users,
     title: "Virtuelle Assistenz",
-    desc: "Unterstützung bei administrativen Aufgaben. Organisatorisches, das Ihnen den Alltag erleichtert.",
-    highlight: "Ihr verlängertes Team"
+    desc: "Administrative Aufgaben, die den Alltag erleichtern. Organisation, Koordination und alles, was sonst liegen bleibt.",
+    highlight: "Unterstützung im Hintergrund"
   },
   {
     icon: Clock,
     title: "Flexible Stundenmodelle",
-    desc: "Nach Absprache. Ob stundenweise oder projektbezogen – wir finden das Passende.",
-    highlight: "100% flexibel"
+    desc: "Nach Absprache. Ob stundenweise oder projektbezogen – wir finden eine Lösung, die zu Ihnen passt.",
+    highlight: "So flexibel wie nötig"
   }
 ];
 
@@ -35,9 +35,9 @@ export default function Services() {
   return (
     <section id="leistungen" className="max-w-5xl mx-auto px-6 py-24 md:py-32">
       <div className="text-center mb-16">
-        <div className="text-accent text-sm font-semibold tracking-[2px] mb-3">WAS WIR FÜR SIE TUN</div>
+        <div className="text-accent text-sm font-semibold tracking-[2px] mb-3">WAS ICH FÜR SIE TUE</div>
         <h2 className="section-heading text-6xl md:text-7xl tracking-tighter mb-6">Leistungen, die entlasten.</h2>
-        <p className="max-w-md mx-auto text-xl text-text-muted">Alles, was ein modernes KMU braucht – ohne eigenes Büropersonal.</p>
+        <p className="max-w-md mx-auto text-xl text-text-muted">Alles, was ein kleines Unternehmen braucht – ohne eigenes Büropersonal.</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -75,7 +75,7 @@ export default function Services() {
       </div>
 
       <div className="text-center mt-16">
-        <p className="text-text-muted">Und vieles mehr – fragen Sie einfach nach Ihrem individuellen Paket.</p>
+        <p className="text-text-muted">Und mehr – fragen Sie einfach nach, was Sie brauchen.</p>
       </div>
     </section>
   );
